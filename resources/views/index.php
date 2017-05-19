@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
@@ -15,4 +15,4 @@ $result['content'] = curl_exec($ch);
 
 // Ngắt CURL, giải phóng
 curl_close($ch);
-?>
+?> -->
