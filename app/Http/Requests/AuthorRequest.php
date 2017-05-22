@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class AticleRequest extends FormRequest
+class AuthorRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,8 @@ class AticleRequest extends FormRequest
     public function rules()
     {
         return [
-          'title' => 'required|min:3',
-          'content' => 'required',
-          // Thêm author_id trở thành required trong article validation
-          'author_id' => 'required',
+            'name' => 'required',
+            'email' => 'required|email'
         ];
     }
 }
